@@ -12,10 +12,10 @@ public class MergedSort {
 		int[] larr=new int[mid];
 		int[] rarr=new int[(n-mid)];
 		
-		for (int i = 0; i <=mid-1; i++) {
+		for (int i = 0; i <mid; i++) {
 			larr[i]=arr[i];
 		}
-		for (int i = mid; i <=n-1; i++) {
+		for (int i = mid; i <n; i++) {
 			rarr[i-mid]=arr[i];
 		}
 		
@@ -53,6 +53,7 @@ public class MergedSort {
 }
 public static void main(String[] args) {
 	int arr[] = {4,6,1,8,3,7,2};
+	//int arr[] = {4,6,1,8};
 	MergeSort(arr);
 	System.out.println(Arrays.toString(arr));
 	

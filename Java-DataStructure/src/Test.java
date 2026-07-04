@@ -13,7 +13,7 @@ class B extends AA{
 }
 
 class C extends B  {
-  int a=10;
+  int b=11;
   public void Showdetails(){
     System.out.println("Show the data of override class c1");
   }
@@ -23,17 +23,15 @@ class C extends B  {
 }
 class Test{
 	 public static void main(String[] args){
-		 int[] ar= {12,15,29,46,26,34,68};
-
-        System.out.println(ar[1]);
     AA a=new C();
-    //a.Showdetails(); ///
+    a.Showdetails(); ///
+          System.out.println(a.b);  //why printing 10 not 11
      
-    //a.Showdetails1();
+    //a.Showdetails1(); //why error
     C c=new C();
     //c. 2 show method will be accessible
     c.Showdetails();
     c.Showdetails1();
-    System.out.println(c.a+" "+c.b);
+    System.out.println(c.b+" "+c.b);
   }
 }

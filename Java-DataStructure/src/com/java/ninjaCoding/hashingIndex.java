@@ -35,7 +35,7 @@ public static void main(String[] args) {
 	l.add(new Integer(5));
 	l.add(new Integer(3));
 	l.add(new Integer(7));
-	Object[] arr=l.toArray(new Integer);
+	Object[] arr=l.toArray();
 	System.out.println(Arrays.toString(arr));
 	int[] ar=linearProbing(l);
 	System.out.println(Arrays.toString(ar));

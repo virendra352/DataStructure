@@ -9,6 +9,7 @@ public static void main(String[] args) {
 	  };
 	  
 	  Optional<Object> off = Optional.ofNullable(null);
+	 // off.get(); NoSuchElementException because of null
 	  if(off.isPresent()) {
 		  System.out.println("Data is present ");
 	  }else{

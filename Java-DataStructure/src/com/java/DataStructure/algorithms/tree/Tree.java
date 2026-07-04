@@ -98,6 +98,7 @@ public class Tree {
 		qu.add(root);
 		while(!qu.isEmpty()) {
 			Node current=qu.remove();
+			System.out.println(current.data);
 			if(current.LeftChild==null) {
 				current.LeftChild=node;
 				System.out.println("Inserted successfully.....");

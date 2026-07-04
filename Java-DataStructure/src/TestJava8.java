@@ -25,7 +25,7 @@ public class TestJava8 {
 	    	 }
 	     });
 	     
-	     b.stream().filter(x->x%2==0).
+	     b.stream().filter(x->x%2==0);
 	     
 	     
 	     

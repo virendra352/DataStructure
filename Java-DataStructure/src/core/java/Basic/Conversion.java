@@ -1,3 +1,5 @@
+package core.java.Basic;
+
 import java.util.PriorityQueue;
 
 public class Conversion {
@@ -16,6 +18,7 @@ public static void main(String[] args) {
     pq.add("Geeks");
     pq.offer("viru");
     pq.offer("virendre");
+    pq.offer("Amit");
 
     System.out.println("Initial PriorityQueue " + pq);
 }

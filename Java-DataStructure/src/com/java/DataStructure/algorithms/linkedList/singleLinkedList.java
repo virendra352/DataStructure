@@ -56,7 +56,9 @@ public class singleLinkedList {
 			System.out.println("sll is empty");
 		}else {
 		for (int i = 0; i <size-1; i++) {
-			System.out.print(temp.data+" -> ");
+			if(i<size-1) {
+				System.out.print(temp.data + " -> ");
+			}
 			temp=temp.next;
 		}
 	  }

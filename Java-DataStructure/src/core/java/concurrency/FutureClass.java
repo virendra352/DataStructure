@@ -3,7 +3,7 @@ package core.java.concurrency;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 
-public class FuterClass implements Runnable{
+public class FutureClass implements Runnable{
 	@Override
 	public void run() {
 		System.out.println("Task is running now");		
@@ -29,5 +29,6 @@ public static void main(String[] args) {
 	//future<T> submit(runnable task ,T result)
 	
 	ExecutorService execnutor=Executors.newFixedThreadPool(2);
+
  }
 }

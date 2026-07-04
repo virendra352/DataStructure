@@ -20,7 +20,7 @@ public static void main(String[] args) {
 	}
  class SubClass extends SuperClass {
 	   private String name;
-	   private  void setName(String name) { 
+	   public void setName(String name) {
 	      System.out.println("subclass");
 	   }
 	   public void display() {
